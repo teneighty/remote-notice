@@ -11,11 +11,19 @@ def run(port):
         s.listen(10)
         while 1:
             client, address = s.accept()
-            data = client.recv(1028)
+            data = recv(client)
             handleResp(data)
             client.close() 
     except KeyboardInterrupt:
         s.close()
+
+def recv(client):
+    data = []
+    while True:
+        d = client.recv(1024)
+        data.append(d)
+        if len(d) < 1024: break
+    return ''.join(data)
 
 def handleResp(data):
     try:
