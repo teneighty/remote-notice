@@ -1,8 +1,6 @@
 # remote-notice
 
-Simple server that takes json messages and sends them to libnotify. Messages
-are sent to the server in a JSON  format. The server then sends the messages to
-dbus.
+Simple server that takes json messages and sends them to dbus.
 
 ## Example
 Try running
