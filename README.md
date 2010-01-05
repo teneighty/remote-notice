@@ -15,6 +15,6 @@ Then:
 
 I usually run irssi in a screen session on my destop. When I am on my laptop I
 run this server and RemoteForward 33333 in my ssh connection.  Lastly, I load
-`scripts/irssi/notify.pl` into my remote `.irssi/scripts`. Now when new IRC
+`scripts/irssi/remote-notice.pl` into my remote `.irssi/scripts`. Now when new IRC
 messages come in, I will receive desktop notifcations.
 
